@@ -1,0 +1,9 @@
+
+.optionwrapper{
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.text{
+    font-size: 20px;
+}

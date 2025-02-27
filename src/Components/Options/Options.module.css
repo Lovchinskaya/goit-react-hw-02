@@ -1,0 +1,9 @@
+.wrapperbutton {
+    display: flex;
+    gap: 30px;
+    margin: 30px;
+   }
+   
+   .button {
+       border: 1px solid purple;
+   }
