@@ -1,4 +1,4 @@
-import css from "../Feedback/FeedBack.module.css"
+import css from "../Feedback/Feedback.module.css"
 
 const FeedBack = (feedback) =>{
 
