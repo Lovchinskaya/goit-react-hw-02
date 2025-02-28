@@ -1,7 +1,8 @@
 // import { useState } from 'react'
 import css from "../Feedback/FeedBack.module.css"
 
-const FeedBack = ( feedback) =>{
+const FeedBack = (feedback) =>{
+    
     return (
         <div className={css.optionwrapper}>
             <span className={css.text}>Good: {feedback.feedback.good}</span>

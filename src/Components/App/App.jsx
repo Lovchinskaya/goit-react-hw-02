@@ -1,42 +1,48 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import Description from '../Description/Description'
 import FeedBack from '../Feedback/Feedback'
 import '../App/App'
 import Options from "../Options/Options"
-
+import style from "../App/App.module.css"
 
 
 const App = () => {
-    const [feedback, setFeedback] = useState(
+    const feedback = 
         {
             good: 0,
             neutral: 0,
             bad: 0
         }  
-    )
+    const value = {
+        good : "Good",
+        neutral : "Nertral",
+        bad: "Bad",
+        reset: "Reset"
+    }
 
-const clickGood = () => {
-    setFeedback( {...feedback, good: feedback.good +1})
-};
-const clickNeutral =() => {
-    setFeedback ({ ...feedback, neutral: feedback.neutral +1})
-};
-const clickBad = () => {
-    setFeedback ({ ...feedback, bad: feedback.bad + 1})
-};
 
 
   return (
     <>
       <Description />
+      <div className = {style.buttonwrapper}>
       <Options 
-      feedback = {feedback} 
-    
-      onUpdate = {[clickGood, clickNeutral, clickBad]}
+      feedbacks = {feedback} 
+      value = {value.good}
       />
+       <Options 
+      feedbacks = {feedback} 
+      value = {value.neutral}
+      />
+       <Options 
+      feedbacks = {feedback} 
+      value = {value.bad}
+      />
+      </div>
+      
       <FeedBack feedback = {feedback}/>
     </>
   )
 }
 
-export default App
+export default App;
