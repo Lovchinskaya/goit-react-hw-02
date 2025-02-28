@@ -1,17 +1,16 @@
 import css from "../Options/Options.module.css";
-import { useState } from 'react';
 
 
-const Options = (value) => {
-    const [clicks, setFeedback] = useState(0)
- 
-    const updateFeedbacks = () => {
-            console.log("I am here")
-            setFeedback(clicks + 1);
-    }
-    
+const Options = ({ onBtnClick}) => {
+
     return (
-            <button className={css.button} onClick={updateFeedbacks}>{value.value} {clicks}</button>
-    )
+        <div className = {css.buttonwrapper}>
+        <button className={css.button} onClick={() =>onBtnClick("good")}>Good</button>
+        <button className={css.button} onClick={() =>onBtnClick("neutral")}>Neutral</button>
+        <button className={css.button} onClick={() =>onBtnClick("bad")}>Bad</button>
+        <button className={css.button} onClick={() =>onBtnClick(0)}>Reset</button>
+        </div>
+          
+        )
 }
 export default Options;
