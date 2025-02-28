@@ -5,7 +5,7 @@ import Options from "../Options/Options"
 import style from "../App/App.module.css"
 
 
-//dont work deploy for some reason
+
 const App = () => {
     const feedback = 
         {
