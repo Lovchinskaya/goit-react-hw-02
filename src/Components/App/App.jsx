@@ -1,10 +1,8 @@
-// import { useState } from 'react'
 import Description from '../Description/Description'
 import FeedBack from '../Feedback/Feedback'
 import '../App/App'
 import Options from "../Options/Options"
 import style from "../App/App.module.css"
-
 
 const App = () => {
     const feedback = 
@@ -19,8 +17,6 @@ const App = () => {
         bad: "Bad",
         reset: "Reset"
     }
-
-
 
   return (
     <>
