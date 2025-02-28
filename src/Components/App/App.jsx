@@ -4,6 +4,8 @@ import '../App/App'
 import Options from "../Options/Options"
 import style from "../App/App.module.css"
 
+
+//dont work deploy
 const App = () => {
     const feedback = 
         {
