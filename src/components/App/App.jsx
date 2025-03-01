@@ -1,7 +1,7 @@
-import Description from '../Description/Description'
-import FeedBack from '../Feedback/Feedback'
-import '../App/App'
-import Options from "../Options/Options"
+import Description from '../../test/Description/Description'
+import FeedBack from '../../test/Feedback/Feedback'
+import './App'
+import Options from "../../test/Options/Options"
 import { useState, useEffect } from 'react';
 import Notification from "../Notification/Notification";
 
