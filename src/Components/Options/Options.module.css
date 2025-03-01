@@ -6,4 +6,10 @@
    
    .button {
        border: 1px solid purple;
+       background-color: rgb(13, 131, 91);
+   }
+   .button:hover {
+    background-color: rgb(76, 210, 166);
+    border-radius: 5px;
+    transition: background-color 0.25s;
    }

@@ -1,8 +1,9 @@
 .optionwrapper{
     display:flex;
-    flex-direction: column;
     gap: 30px;
+    margin-top: 50px;
 }
 .text{
-    font-size: 20px;
+    font-size: 23px;
+    color: rgb(124, 10, 124)
 }
