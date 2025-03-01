@@ -2,7 +2,6 @@ import Description from '../Description/Description'
 import FeedBack from '../Feedback/Feedback'
 import '../App/App'
 import Options from "../Options/Options"
-// import style from "../App/App.module.css"
 import { useState, useEffect } from 'react';
 import Notification from "../Notification/Notification";
 
@@ -36,7 +35,6 @@ const App = () => {
   return (
     <>
       <Description />
-
       <Options 
       value = {feedback}
       total= {totalFeedback}
@@ -44,7 +42,6 @@ const App = () => {
       resetFeedback={resetFeedback}
       />
       {totalFeedback > 0 ? (
-
         <FeedBack 
       feedback= {feedback}
       total= {totalFeedback}
@@ -56,5 +53,4 @@ const App = () => {
     </>
   )
 }
-
 export default App;
