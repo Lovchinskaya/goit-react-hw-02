@@ -1,10 +1,10 @@
-import Description from '../../test/Description/Description'
-import FeedBack from '../../test/Feedback/Feedback'
+import Description from '../Description/Description'
+import FeedBack from '../Feedback/Feedback'
 import './App'
-import Options from "../../test/Options/Options"
+import Options from "../Options/Options"
 import { useState, useEffect } from 'react';
 import Notification from "../Notification/Notification";
-
+//must work
 const App = () => {
     const [feedback, setFeedback] = useState(() => {
         const savedFeedback = localStorage.getItem("feedback");
